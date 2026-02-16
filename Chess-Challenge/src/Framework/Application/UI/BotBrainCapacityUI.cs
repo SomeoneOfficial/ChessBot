@@ -10,6 +10,7 @@ namespace ChessChallenge.Application
         static readonly Color red = new(219, 9, 9, 255);
         static readonly Color background = new Color(40, 40, 40, 255);
 
+/*
         public static void Draw(int totalTokenCount, int debugTokenCount, int tokenLimit)
         {
             int activeTokenCount = totalTokenCount - debugTokenCount;
@@ -34,17 +35,10 @@ namespace ChessChallenge.Application
                 col = red;
             Raylib.DrawRectangle(0, screenHeight - height, (int)(screenWidth * t), height, col);
 
-            var textPos = new System.Numerics.Vector2(screenWidth / 2, screenHeight - height / 2);
-            string text = $"Bot Brain Capacity: {activeTokenCount}/{tokenLimit}";
-            if (activeTokenCount > tokenLimit)
-            {
-                text += " [LIMIT EXCEEDED]";
-            }
-            else if (debugTokenCount != 0)
-            {
-                text += $"    ({totalTokenCount} with Debugs included)";
-            }
-            UIHelper.DrawText(text, textPos, fontSize, 1, Color.WHITE, UIHelper.AlignH.Centre);
+           
+            UIHelper.DrawText("YouHaveUnlimitedStuff", new System.Numerics.Vector2(screenWidth / 2, screenHeight - height / 2), fontSize, 1, Color.WHITE, UIHelper.AlignH.Centre);
+            
         }
+        */
     }
 }
